@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,143 +10,6 @@
       rel="stylesheet"
     />
     <title>Food Menu</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0px;
-      }
-
-      .topnav {
-        display: flex;
-        background-color: black;
-        margin: 0px;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .lines {
-        display: inline-block;
-        background-color: #1a1a1a;
-        padding: 55px 40px;
-      }
-
-      .fod {
-        color: white;
-        font-weight: 900;
-        font-size: 30px;
-      }
-
-      .emp {
-        color: white;
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: bold;
-        font-style: normal;
-        font-size: 30px;
-      }
-
-      .ttl-cntnr {
-        display: inline-block;
-        margin-left: 25px;
-      }
-
-      .ctgr {
-        display: flex;
-        flex-grow: 5;
-        flex-direction: row-reverse;
-      }
-
-      .ctgr span {
-        color: grey;
-        margin: 0px 50px;
-      }
-
-      .btns {
-        flex-grow: 0.3;
-      }
-
-      .fa-bars,
-      .ttl-cntnr,
-      nav i:hover {
-        cursor: pointer;
-      }
-
-      .ctgr span:hover {
-        cursor: pointer;
-        color: white;
-        text-shadow: 0px 0px 10px;
-        transition-duration: 0.4s;
-      }
-
-      .main::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 108px;
-        left: 0px;
-        background-color: #0c0c0c;
-        box-shadow: inset -3px 0 0 0 #262424;
-      }
-
-      .main {
-        display: grid;
-        position: relative;
-        height: 100vh;
-        padding-left: 108px;
-        color: white;
-
-        background-image: conic-gradient(black, rgb(20, 20, 20));
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-color: black;
-
-        grid-template-columns: 1fr 2fr 1fr;
-        gap: 100px;
-        justify-items: center;
-      }
-
-      .lft {
-        padding-left: 120px;
-        padding-top: 170px;
-      }
-      .rght {
-        position: relative;
-        top: 300px;
-        left: -35%;
-      }
-
-      .main span:first-of-type {
-        color: #8a8989;
-      }
-      .main p {
-        color: #b5b5b6;
-      }
-
-      .sdnv {
-        background-color: yellow;
-        position: fixed;
-        right: 0px;
-        top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 70px;
-        height: 270px;
-        padding: 30px 0px 30px;
-        border-radius: 50px 0 0 50px;
-      }
-      .sdnv i:hover {
-        cursor: pointer;
-      }
-
-      .scrlprf {
-        height: 300vh;
-        text-align: center;
-        font-weight: bolder;
-      }
-    </style>
   </head>
   <body>
     <nav class="topnav">
@@ -183,7 +47,11 @@
         </p>
       </div>
 
-      <img src="https://s3-alpha-sig.figma.com/img/416a/a7c2/6e5c40657ec969d850ff246afcd4510e?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FG6SBLvU7n1-wi~U1gAboOksZjgqcjWndG4CjapDL-MTHrdWyZ1SD422tqhcTpNokqk3n9WsQEJGdJecs4Npv2KSFYhs-1Wb7njyexINjGfY0KCigM-chcAsPHrtj168NFAO26u1QVvUOsLr05we98JhZsLQmfMWw0eYKGZS6tUuCrJbdxhdbInI1bnlP6pMmF5xJnid8p6fybDjhSSRjfQkY8FOzmOF9YF5Qj19M2mZut8P1oJR7~DlMd5lU0Rdzjbwb020LqGSl4UvStmQNEhVtpKititWiJCd5psNPwE6EdqQPX2qT6eKLRXimXS48ePyBXRRZhraJnWCoi2vOQ__" alt="pineapple" />
+      <img
+        src="https://s3-alpha-sig.figma.com/img/416a/a7c2/6e5c40657ec969d850ff246afcd4510e?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FG6SBLvU7n1-wi~U1gAboOksZjgqcjWndG4CjapDL-MTHrdWyZ1SD422tqhcTpNokqk3n9WsQEJGdJecs4Npv2KSFYhs-1Wb7njyexINjGfY0KCigM-chcAsPHrtj168NFAO26u1QVvUOsLr05we98JhZsLQmfMWw0eYKGZS6tUuCrJbdxhdbInI1bnlP6pMmF5xJnid8p6fybDjhSSRjfQkY8FOzmOF9YF5Qj19M2mZut8P1oJR7~DlMd5lU0Rdzjbwb020LqGSl4UvStmQNEhVtpKititWiJCd5psNPwE6EdqQPX2qT6eKLRXimXS48ePyBXRRZhraJnWCoi2vOQ__"
+        alt="pineapple"
+        style="height: 800px;"
+      />
 
       <div class="rght">
         <h1>Fruit</h1>
@@ -210,7 +78,7 @@
       </span>
       <div class="mainprdcts">
         <div class="orng">
-          <img src="media/orng.png" alt="" />
+          <img src="" alt="" />
         </div>
         <!-- <div class="wtrmln">
           <img src="media/wtrmln.png" alt="">
