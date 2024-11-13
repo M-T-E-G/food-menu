@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.topnav {
+  display: flex;
+  background-color: black;
+  margin: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lines {
+  display: inline-block;
+  background-color: #1a1a1a;
+  padding: 55px 40px;
+}
+
+.fod {
+  color: white;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.emp {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.ttl-cntnr {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.ctgr {
+  display: flex;
+  flex-grow: 5;
+  flex-direction: row-reverse;
+}
+
+.ctgr span {
+  color: grey;
+  margin: 0px 50px;
+}
+
+.btns {
+  flex-grow: 0.3;
+}
+
+.fa-bars,
+.ttl-cntnr,
+nav i:hover {
+  cursor: pointer;
+}
+
+.ctgr span:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 0px 10px;
+  transition-duration: 0.4s;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 108px;
+  left: 0px;
+  background-color: #0c0c0c;
+  box-shadow: inset -3px 0 0 0 #262424;
+}
+
+.main {
+  display: grid;
+  position: relative;
+  height: 100vh;
+  padding-left: 60px;
+  color: white;
+
+  background-image: conic-gradient(black, rgb(20, 20, 20));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 100px;
+  justify-items: center;
+}
+
+.lft {
+  padding-left: 120px;
+  padding-top: 170px;
+}
+.rght {
+  position: relative;
+  top: 300px;
+  left: -35%;
+}
+
+.main span:first-of-type {
+  color: #8a8989;
+}
+.main p {
+  color: #b5b5b6;
+}
+
+.sdnv {
+  background-color: yellow;
+  position: fixed;
+  right: 0px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 270px;
+  padding: 30px 0px 30px;
+  border-radius: 50px 0 0 50px;
+}
+.sdnv i:hover {
+  cursor: pointer;
+}
+
+.scrlprf {
+  height: 300vh;
+  text-align: center;
+  font-weight: bolder;
+}
