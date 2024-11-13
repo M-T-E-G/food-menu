@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Food Menu</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+      }
+
+      .topnav {
+        display: flex;
+        background-color: black;
+        margin: 0px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .lines {
+        display: inline-block;
+        background-color: #1a1a1a;
+        padding: 55px 40px;
+      }
+
+      .fod {
+        color: white;
+        font-weight: 900;
+        font-size: 30px;
+      }
+
+      .emp {
+        color: white;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30px;
+      }
+
+      .ttl-cntnr {
+        display: inline-block;
+        margin-left: 25px;
+      }
+
+      .ctgr {
+        display: flex;
+        flex-grow: 5;
+        flex-direction: row-reverse;
+      }
+
+      .ctgr span {
+        color: grey;
+        margin: 0px 50px;
+      }
+
+      .btns {
+        flex-grow: 0.3;
+      }
+
+      .fa-bars,
+      .ttl-cntnr,
+      nav i:hover {
+        cursor: pointer;
+      }
+
+      .ctgr span:hover {
+        cursor: pointer;
+        color: white;
+        text-shadow: 0px 0px 10px;
+        transition-duration: 0.4s;
+      }
+
+      .main::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 108px;
+        left: 0px;
+        background-color: #0c0c0c;
+        box-shadow: inset -3px 0 0 0 #262424;
+      }
+
+      .main {
+        display: grid;
+        position: relative;
+        height: 100vh;
+        padding-left: 108px;
+        color: white;
+
+        background-image: conic-gradient(black, rgb(20, 20, 20));
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: black;
+
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 100px;
+        justify-items: center;
+      }
+
+      .lft {
+        padding-left: 120px;
+        padding-top: 170px;
+      }
+      .rght {
+        position: relative;
+        top: 300px;
+        left: -35%;
+      }
+
+      .main span:first-of-type {
+        color: #8a8989;
+      }
+      .main p {
+        color: #b5b5b6;
+      }
+
+      .sdnv {
+        background-color: yellow;
+        position: fixed;
+        right: 0px;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 70px;
+        height: 270px;
+        padding: 30px 0px 30px;
+        border-radius: 50px 0 0 50px;
+      }
+      .sdnv i:hover {
+        cursor: pointer;
+      }
+
+      .scrlprf {
+        height: 300vh;
+        text-align: center;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="lines">
+        <i class="fa-solid fa-bars fa-2xl" style="color: grey"></i>
+      </div>
+      <div class="ttl-cntnr">
+        <span class="fod">Food</span>
+        <br />
+        <span class="emp">Empire</span>
+      </div>
+      <div class="ctgr">
+        <span>About Us</span>
+        <span>Fruit Shop</span>
+        <span>Favorite Fruits</span>
+      </div>
+      <span class="btns">
+        <i
+          class="fa-solid fa-arrow-right-to-bracket"
+          style="color: #ffffff"
+        ></i>
+        <i class="fa-solid fa-box-archive" style="color: #ffffff"></i>
+      </span>
+    </nav>
+
+    <div class="main">
+      <div class="lft">
+        <h1><span>01</span>/02</h1>
+        <br />
+        <h1>Ananas</h1>
+        <br />
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint.
+        </p>
+      </div>
+
+      <img src="media/pine.png" alt="pineapple" />
+
+      <div class="rght">
+        <h1>Fruit</h1>
+        <h1>Delivery</h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <span class="sdnv">
+        <i
+          class="fa-brands fa-square-instagram fa-2xl"
+          style="color: #ffffff"
+        ></i>
+        <i
+          class="fa-brands fa-square-facebook fa-2xl"
+          style="color: #ffffff"
+        ></i>
+        <i
+          class="fa-brands fa-square-twitter fa-2xl"
+          style="color: #ffffff"
+        ></i>
+      </span>
+      <div class="mainprdcts">
+        <div class="orng">
+          <img src="media/orng.png" alt="" />
+        </div>
+        <!-- <div class="wtrmln">
+          <img src="media/wtrmln.png" alt="">
+        </div> -->
+      </div>
+    </div>
+    <div class="scrlprf">Scroll to prove side nav.</div>
+    <script
+      src="https://kit.fontawesome.com/27555166fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
