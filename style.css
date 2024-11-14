@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
 }
 
@@ -79,7 +79,7 @@ nav i:hover {
 .main {
   display: grid;
   position: relative;
-  height: 100vh;
+  height: 900px;
   padding-left: 60px;
   color: white;
 
@@ -89,7 +89,7 @@ nav i:hover {
   background-color: black;
 
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 100px;
+  gap: 80px;
   justify-items: center;
 }
 
@@ -103,18 +103,21 @@ nav i:hover {
   left: -35%;
 }
 
-.main span:first-of-type {
+.main .lft span:first-of-type {
   color: #8a8989;
 }
-.main p {
+.lft p,
+.rght p,
+.desc {
   color: #b5b5b6;
+  font-weight: 100;
 }
 
 .sdnv {
   background-color: yellow;
   position: fixed;
   right: 0px;
-  top: 200px;
+  top: 168px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -126,6 +129,87 @@ nav i:hover {
 }
 .sdnv i:hover {
   cursor: pointer;
+}
+
+.mainprdcts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: calc(100% - 108px);
+}
+
+.orng {
+  display: flex;
+  background-color: #171719cc;
+  gap: 40px;
+  height: 250px;
+}
+
+.orng .mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+.orng .mid:first-of-type span:hover{
+  cursor: pointer;
+}
+
+.orng .orng-rght button {
+  color: white;
+  background-color: yellow;
+  border: none;
+  margin-top: 15px;
+  width: 96px;
+  height: 37px;
+}
+.orng .orng-rght :nth-child(2) {
+  font-weight: 500;
+  font-size: 14px;
+  color: #dedede;
+  text-decoration: line-through;
+  margin: 0px 0px 5px 10px;
+}
+.orng .orng-rght {
+  margin-top: 70px;
+}
+
+.wtrmln {
+  display: flex;
+  background-color: #171719cc;
+  gap: 40px;
+  height: 250px;
+}
+
+.wtrmln .mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+.wtrmln .mid:first-of-type span:hover{
+  cursor: pointer;
+}
+
+.wtrmln .wtrmln-rght button {
+  color: white;
+  background-color: yellow;
+  border: none;
+  margin-top: 15px;
+  width: 96px;
+  height: 37px;
+}
+.wtrmln .wtrmln-rght :nth-child(2) {
+  font-weight: 500;
+  font-size: 14px;
+  color: #dedede;
+  text-decoration: line-through;
+  margin: 0px 0px 5px 10px;
+}
+.wtrmln .wtrmln-rght {
+  margin-top: 70px;
 }
 
 .scrlprf {
